@@ -1,0 +1,35 @@
+<section>
+    <div class="lg:grid lg:grid-cols-2 gap-8 py-16 md:py-8">
+      <div>
+        <h2 class="">About Me</h2>
+        <p>
+          As a Full-Stack Web Developer proficient in both front-end and
+          back-end development, I excel in creating user-friendly websites and
+          applications, staying updated with industry trends, and leveraging
+          technologies such as HTML, CSS, JavaScript, Node.js, React, Express,
+          and NextJS. Additionally, I am dedicated to contributing to
+          innovative projects while continuously enhancing my skills in
+          software development. As a Flutter developer, my objective is to
+          leverage my expertise in both front-end and back-end technologies to
+          contribute effectively to innovative projects while continuously
+          expanding my knowledge and enhancing my capabilities in software
+          development.
+        </p>
+      </div>
+      <div class="mt-4 lg:mt-0">
+        <h2 class="lg:pl-4 pl-0">Skills</h2>
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+          <div *ngFor="let skill of skills" class="flex flex-col items-center space-y-1">
+            <img
+              [src]="'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/' + skill.icon + '/' + skill.icon + '-original.svg'"
+              alt='{{ skill.name }}'
+              width="35"
+              height="35"
+            />
+            <p>{{ skill.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
